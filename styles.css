@@ -101,14 +101,82 @@ nav{
 }
 
 nav ul{
-    display: inline-block;
+    display: flex;
     list-style-type: none;
+    justify-content: center;
 }
 
 nav li{
-    display: flex;
+    padding: 0.5em 1em 0.5em 1em;
+    font-weight: bold;
+    font-size: 1.5em;
     font-family: 'Playfair Display';
     text-decoration: none;
     color: var(--midnight-blue);
     text-align: center;
+}
+
+h2{
+    font-family: 'Playfair Display';
+    color: var(--midnight-blue);
+    font-size: 2em;
+    padding-top: 2em;
+}
+
+p{
+    font-family: 'Playfair Display';
+    color: var(--dark-charcoal);
+    font-size: 1.1em;
+    padding-top: 0.5em;
+    padding-bottom: 2em;
+    border-bottom: solid 3px var(--champagne-gold);
+}
+
+.offerings{
+    background-color: var(--olive-green);
+    border-radius: 5px;
+    margin: 1em;
+    padding: .5em;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+h3{
+    color: var(--soft-white);
+    font-family: 'Playfair Display';
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.offerings > p{
+    color: var(--soft-white);
+    border-bottom: none;
+    padding-bottom: 1em;
+}
+
+.offerings > ul{
+    color: var(--soft-white);
+    list-style-type: disc;
+    list-style-position: inside;
+    font-family: 'Playfair Display';
+}
+
+.offerings > li{
+    font-family: 'Playfair Display';
+}
+
+#gallery{
+    border-bottom: none;
+}
+
+figure{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+figcaption{
+    position: absolute;
+    background-color: var(--soft-white);
+    font-family: 'Playfair Display';
+    width: 100%;
 }
