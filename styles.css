@@ -115,7 +115,13 @@ nav li{
     color: var(--midnight-blue);
     text-align: center;
 }
+main{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1em 0 1em;
 
+}
 h2{
     font-family: 'Playfair Display';
     color: var(--midnight-blue);
@@ -168,15 +174,30 @@ h3{
     border-bottom: none;
 }
 
+#figure{
+    display: grid;
+    align-items: center;
+    margin: 2rem;
+}
 figure{
-    display: flex;
-    justify-content: center;
-    position: relative;
+    display: grid;
+    margin: 0 auto;
+    align-items: center;
+}
+
+figure > img{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
 
 figcaption{
-    position: absolute;
-    background-color: var(--soft-white);
+    display: inline-block;
+    margin-bottom: 1em;
     font-family: 'Playfair Display';
-    width: 100%;
+    text-align: center;
+    font-style: italic;
+    padding: 0.5em;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.5);
 }
