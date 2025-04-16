@@ -120,7 +120,8 @@ main{
     justify-content: center;
     align-items: center;
     padding: 0 1em 0 1em;
-
+    border-bottom: solid 3px var(--champagne-gold);
+    margin: 1rem;
 }
 h2{
     font-family: 'Playfair Display';
@@ -136,6 +137,11 @@ p{
     padding-top: 0.5em;
     padding-bottom: 2em;
     border-bottom: solid 3px var(--champagne-gold);
+}
+
+#offer{
+    border-bottom: solid 3px var(--champagne-gold);
+    padding-bottom: 2em;
 }
 
 .offerings{
@@ -183,6 +189,7 @@ figure{
     display: grid;
     margin: 0 auto;
     align-items: center;
+    margin-bottom: 0;
 }
 
 figure > img{
@@ -200,4 +207,75 @@ figcaption{
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
     box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+a{
+    text-decoration: none;
+    background-color: var(--olive-green);
+    color: var(--soft-white);
+    border-radius: 5px;
+    font-family: 'Playfair Display';
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.25em;
+    padding: 0.5em 2em 0.5em 2em;
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+
+footer{
+    background-color: var(--midnight-blue);
+    width: 100%;
+    padding: 1rem;
+}
+
+footer > p{
+    display: block;
+    border-bottom: none;
+    color: var(--soft-white);
+    margin: 0 auto;
+    text-align: center;
+    row-gap: 0;
+}
+
+footer ul{
+    display: flex;
+    justify-content: center;
+}
+
+.media{
+    background-color: var(--midnight-blue);
+    color: var(--champagne-gold);
+    font-weight: bold;
+    text-wrap: nowrap;
+}
+
+#email{
+    font-weight: bold;
+    color: var(--champagne-gold);
+    font-size: 1.1em;
+}
+
+@media screen and (min-width: 600px){
+    body{
+        display: grid;
+        align-items: center;
+
+    }
+
+    #offer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }    
+
+    #basket{
+        grid-column: 1/-1;
+    }
+
+    #figure{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 90%;
+        gap: 1em;
+    }
 }
