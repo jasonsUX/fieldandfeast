@@ -287,9 +287,8 @@ footer ul{
     }
 
     #figure{
-        display: flex;
-        flex-wrap: wrap;
-        align-items: baseline;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }
 
